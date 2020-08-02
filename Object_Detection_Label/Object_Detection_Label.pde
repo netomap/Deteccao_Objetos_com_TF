@@ -5,7 +5,7 @@ char label = '*';
 
 String project_dir = "C:/Users/manuel/Documents/GitHub/Deteccao_Objetos_com_Keras_TF/Object_Detection_Label/";
 String images_dir = project_dir + "images/";
-String labels_file = project_dir + "labels.txt";
+String labels_file = project_dir + "labels.csv";
 
 File dir;
 File [] images;
