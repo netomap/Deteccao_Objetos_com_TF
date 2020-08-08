@@ -30,6 +30,10 @@ void setup(){
 void draw(){
   background(255);
   image(img, 0, 0);
+  strokeWeight(1);
+  stroke(0);
+  line(0, mouseY, width, mouseY);
+  line(mouseX, 0, mouseX, height);
   desenhaRetangulo();
 }
 
@@ -74,7 +78,7 @@ void prepararDadosESalvar(){
     if (x1 > img.width){x1=img.width;}
     if (y1 > img.height){y1=img.height;}
     
-    String conteudo = nomeAtual + ";" + x0 + ";" + y0 + ";" + x1 + ";" + y1 + ";" + label;
+    String conteudo = "images/" + nomeAtual + "," + img.width + "," + img.height + "," + x0 + "," + y0 + "," + x1 + "," + y1 + "," + label;
         
     pw.write(conteudo);
     pw.write("\n");
