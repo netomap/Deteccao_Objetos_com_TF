@@ -7,4 +7,5 @@ Basta colocar todas as imagens na pasta ***images*** e abrir o arquivo.
 - Botão **->** muda para próxima imagem  
 - Botão **<-** muda para imagem anterior  
 
-As categorias serão salvas no arquivo *"labels.csv"* com os dados de cada linha separaos por *";"*
+As categorias serão salvas no arquivo *"annotations.csv"* com os dados de cada linha separaos por *","*  
+E veem no seguinte formato: *path, W, H, x0, y0, x1, y1, classe*  
